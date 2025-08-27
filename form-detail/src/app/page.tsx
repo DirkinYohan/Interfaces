@@ -37,7 +37,7 @@ export default function AppearanceSettings() {
 
         <div className="mb-6">
           <label className="block text-gray-700 font-medium mb-2">Accent color</label>
-          <p className="text-gray-400 text-xs mb-2 border-b border-gray-300 pb-2">Pick your platform's main color</p>
+          <p className="text-gray-400 text-xs mb-2 border-b border-gray-300 pb-2">Pick your platforms main color</p>
           <div className="flex gap-2 ml-60  -mt-9">
             <div className="w-6 h-6 rounded-full bg-red-400 cursor-pointer"></div>
             <div className="w-6 h-6 rounded-full bg-yellow-300 cursor-pointer"></div>
