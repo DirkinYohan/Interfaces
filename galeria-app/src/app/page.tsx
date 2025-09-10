@@ -188,18 +188,23 @@ export default function Home() {
                   </header>
 
                   <section className="bg-gray-50 rounded-xl p-3 mt-3">
-                    <ul className="flex justify-around text-sm text-gray-600">
-                      <li>
-                        Articles: <strong>34</strong>
-                      </li>
-                      <li>
-                        Followers: <strong>980</strong>
-                      </li>
-                      <li>
-                        Rating: <strong>8.9</strong>
-                      </li>
-                    </ul>
-                  </section>
+                <ul className="flex justify-around text-sm text-gray-600">
+                  <li className="flex flex-col items-center">
+                    <span>Articles</span>
+                   <strong className="text-xl font-bold text-black">34</strong>
+                  </li>
+
+                  <li className="flex flex-col items-center">
+                    <span>Followers</span>
+                    <strong className="text-xl font-bold text-black">980</strong>
+                  </li>
+                 <li className="flex flex-col items-center">
+                  <span>Rating</span>
+                  <strong className="text-xl font-bold text-black">8.9</strong>
+                </li>
+              </ul>
+            </section>
+   
                   <section className="justify-center flex gap-5 mt-3">
                     <button className="bg-white text-black rounded-xl px-4 py-2 self-start border-1 border-black w-30">
                       Chat
@@ -211,9 +216,9 @@ export default function Home() {
                 </section>
               </aside>
 
-              {/* Botones y etiquetas */}
+              
               <section className="flex flex-col gap-6">
-                {/* Botones */}
+                
                 <nav className="flex items-center justify-center gap-4">
                   <button className="bg-white rounded-full shadow-2xl w-12 h-12 flex items-center justify-center text-gray-600 hover:bg-gray-100">
                     ⬅
@@ -223,12 +228,19 @@ export default function Home() {
                   </button>
                 </nav>
 
-                <menu className="col-span-2 bg-white rounded-2xl shadow-2xl p-4 flex flex-wrap gap-2 items-center">
+                <menu className="col-span-2 bg-white rounded-2xl shadow-2xl p-4 flex flex-col gap-2">
+ 
+                <div className="flex flex-wrap gap-2">
                   <li className="px-3 py-1 bg-gray-100 rounded text-sm text-gray-600">Donald Trump</li>
                   <li className="px-3 py-1 bg-gray-100 rounded text-sm text-gray-600">USA</li>
+                </div>
+
+                <div className="flex flex-wrap gap-2">
                   <li className="px-3 py-1 bg-gray-100 rounded text-sm text-gray-600">Politics</li>
                   <li className="px-3 py-1 bg-blue-100 text-blue-600 rounded text-sm font-medium">2020</li>
+                </div>
                 </menu>
+
               </section>
             </section>
           </section>
